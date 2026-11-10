@@ -18,7 +18,7 @@ services:
     environment:
       - PYTHONPATH=/usr/src/fastapi
       - ENVIRONMENT=testing
-      - EMAIL_HOST=mailhog_theater_test
+      - EMAIL_HOST=mailhog
       - EMAIL_PORT=1025
       - EMAIL_HOST_USER=testuser@mate.com
       - EMAIL_HOST_PASSWORD=test_password
@@ -26,7 +26,7 @@ services:
       - MAILHOG_API_PORT=8025
       - MINIO_ROOT_USER=minioadmin
       - MINIO_ROOT_PASSWORD=some_password
-      - MINIO_HOST=minio-theater-test
+      - MINIO_HOST=minio
       - MINIO_PORT=9000
       - MINIO_STORAGE=theater-storage
     depends_on:
@@ -60,7 +60,7 @@ services:
     environment:
       - MINIO_ROOT_USER=minioadmin
       - MINIO_ROOT_PASSWORD=some_password
-      - MINIO_HOST=minio-theater-test
+      - MINIO_HOST=minio
       - MINIO_PORT=9000
       - MINIO_STORAGE=theater-storage
     volumes:
